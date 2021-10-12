@@ -1,12 +1,12 @@
 USE master
 GO
 
-declare @currentDBName varchar(20)
-		,@newDBName varchar(20)
-        ,@alterDB nvarchar(500)
+declare @currentDBName varchar(50)
+		,@newDBName varchar(50)
+        ,@alterDB nvarchar(1500)
 
-set @currentDBName='CURRENT_NAME'
-set @newDBName='NEW_NAME'
+set @currentDBName='GMS.CrystalValley'
+set @newDBName='GMS.CrystalValley.Old'
 
 set @alterDB='ALTER DATABASE ['+@currentDBName+'] SET SINGLE_USER WITH ROLLBACK IMMEDIATE'
 print @alterDB
