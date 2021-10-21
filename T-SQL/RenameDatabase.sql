@@ -5,8 +5,8 @@ declare @currentDBName varchar(50)
 		,@newDBName varchar(50)
         ,@alterDB nvarchar(1500)
 
-set @currentDBName='GMS.CrystalValley'
-set @newDBName='GMS.CrystalValley.Old'
+set @currentDBName='foo'
+set @newDBName='bar'
 
 set @alterDB='ALTER DATABASE ['+@currentDBName+'] SET SINGLE_USER WITH ROLLBACK IMMEDIATE'
 print @alterDB
